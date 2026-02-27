@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Heart, Users, ShieldCheck, Building } from "lucide-react";
+import aboutImg from "@/assets/about-doctor.jpg";
 
 const highlights = [
   { icon: ShieldCheck, label: "Ministry of Health" },
@@ -12,7 +13,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="section-padding section-alt">
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -46,24 +47,22 @@ const AboutSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative"
           >
-            <div className="aspect-[4/3] rounded-2xl bg-secondary overflow-hidden relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="h-20 w-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <Heart className="h-10 w-10 text-primary" />
-                  </div>
-                  <p className="text-lg font-semibold text-foreground">24-Hour Care</p>
-                  <p className="text-sm text-muted-foreground">Open Every Day</p>
-                </div>
-              </div>
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden relative card-shadow">
+              <img
+                src={aboutImg}
+                alt="Medical team at Ngara Health Centre"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 card-shadow border border-border">
+            {/* Stats floating card */}
+            <div className="absolute -bottom-5 -left-3 md:-left-5 bg-card rounded-xl p-4 card-shadow border border-border">
               <p className="text-2xl font-bold text-primary">24</p>
               <p className="text-xs text-muted-foreground">In-Patient Beds</p>
             </div>
-            <div className="absolute -top-4 -right-4 bg-card rounded-xl p-4 card-shadow border border-border">
-              <p className="text-2xl font-bold text-accent">Level 3</p>
-              <p className="text-xs text-muted-foreground">KEPH Classification</p>
+            <div className="absolute -top-5 -right-3 md:-right-5 bg-card rounded-xl p-4 card-shadow border border-border">
+              <p className="text-2xl font-bold text-accent">24/7</p>
+              <p className="text-xs text-muted-foreground">Always Open</p>
             </div>
           </motion.div>
         </div>

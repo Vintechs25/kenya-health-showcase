@@ -2,77 +2,84 @@ import { X, Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
 const DemoBanner = () => {
-  const [visible, setVisible] = useState(true);
-
-  if (!visible) return null;
+  const [topVisible, setTopVisible] = useState(true);
+  const [bottomVisible, setBottomVisible] = useState(true);
 
   return (
     <>
       {/* Top sticky banner */}
-      <div className="fixed top-0 left-0 right-0 z-[60] bg-foreground text-background text-center py-2 px-4 flex items-center justify-center gap-3">
-        <div className="flex items-center gap-2 text-xs sm:text-sm font-medium">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-2.5 py-0.5 border border-accent/30">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-            <span className="text-accent font-semibold">DEMO</span>
-          </span>
-          <span className="text-background/80">
-            Preview by{" "}
-          </span>
-          <video
-            src="/vintech_logo.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="h-5 w-auto inline-block rounded-sm"
-          />
-          <span className="font-semibold text-background">Vintech Systems</span>
-          <span className="hidden sm:inline text-background/50">|</span>
-          <a href="tel:0719767590" className="hidden sm:inline-flex items-center gap-1 text-background/70 hover:text-background transition-colors">
-            <Phone className="h-3 w-3" />
-            0719767590
-          </a>
-          <a href="mailto:ltdvintech@gmail.com" className="hidden sm:inline-flex items-center gap-1 text-background/70 hover:text-background transition-colors">
-            <Mail className="h-3 w-3" />
-            ltdvintech@gmail.com
-          </a>
+      {topVisible && (
+        <div className="fixed top-0 left-0 right-0 z-[60] bg-foreground text-background">
+          <div className="container flex items-center justify-between h-9 text-xs sm:text-sm">
+            <div className="flex items-center gap-2 sm:gap-3 font-medium overflow-hidden">
+              <span className="inline-flex items-center gap-1.5 shrink-0 rounded-full bg-accent/20 px-2 py-0.5 border border-accent/30">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                <span className="text-accent font-bold text-[10px] sm:text-xs">DEMO</span>
+              </span>
+              <span className="text-background/70 hidden sm:inline">
+                Preview by <span className="font-bold text-background">Vintech Systems</span>
+              </span>
+              <span className="text-background/70 sm:hidden font-bold">Vintech Systems</span>
+              <span className="text-background/20 hidden md:inline">|</span>
+              <a href="tel:0719767590" className="hidden md:inline-flex items-center gap-1 text-background/60 hover:text-background transition-colors">
+                <Phone className="h-3 w-3" />
+                0719767590
+              </a>
+              <a href="mailto:ltdvintech@gmail.com" className="hidden md:inline-flex items-center gap-1 text-background/60 hover:text-background transition-colors">
+                <Mail className="h-3 w-3" />
+                ltdvintech@gmail.com
+              </a>
+            </div>
+            <button
+              onClick={() => setTopVisible(false)}
+              className="p-1 text-background/40 hover:text-background transition-colors shrink-0"
+              aria-label="Close demo banner"
+            >
+              <X className="h-3.5 w-3.5" />
+            </button>
+          </div>
         </div>
-        <button
-          onClick={() => setVisible(false)}
-          className="absolute right-2 top-1/2 -translate-y-1/2 p-1 text-background/50 hover:text-background transition-colors"
-          aria-label="Close demo banner"
-        >
-          <X className="h-4 w-4" />
-        </button>
-      </div>
+      )}
 
       {/* Bottom floating badge */}
-      <div className="fixed bottom-4 left-4 z-[60] bg-foreground/95 backdrop-blur text-background rounded-xl px-4 py-3 card-shadow max-w-xs">
-        <div className="flex items-center gap-2 mb-1.5">
-          <video
-            src="/vintech_logo.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="h-6 w-auto rounded-sm"
-          />
-          <p className="text-xs font-semibold text-accent">Demo Preview</p>
+      {bottomVisible && (
+        <div className="fixed bottom-4 left-4 z-[60] bg-foreground/95 backdrop-blur-md text-background rounded-xl p-4 card-shadow max-w-[280px] border border-background/5">
+          <button
+            onClick={() => setBottomVisible(false)}
+            className="absolute top-2 right-2 p-1 text-background/30 hover:text-background transition-colors"
+            aria-label="Close"
+          >
+            <X className="h-3 w-3" />
+          </button>
+          <div className="flex items-center gap-2 mb-2">
+            <video
+              src="/vintech_logo.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-6 w-auto rounded"
+            />
+            <div>
+              <p className="text-[11px] font-bold text-background leading-tight">Vintech Systems</p>
+              <p className="text-[10px] text-accent font-semibold">Demo Preview</p>
+            </div>
+          </div>
+          <p className="text-[11px] text-background/50 leading-relaxed mb-3">
+            Want a professional website like this for your hospital?
+          </p>
+          <div className="flex items-center gap-4 text-[11px]">
+            <a href="tel:0719767590" className="flex items-center gap-1 text-background/70 hover:text-background font-medium transition-colors">
+              <Phone className="h-3 w-3" />
+              Call Us
+            </a>
+            <a href="mailto:ltdvintech@gmail.com" className="flex items-center gap-1 text-background/70 hover:text-background font-medium transition-colors">
+              <Mail className="h-3 w-3" />
+              Email Us
+            </a>
+          </div>
         </div>
-        <p className="text-[11px] text-background/60 leading-relaxed mb-2">
-          Want a website like this for your hospital? Contact Vintech Systems today.
-        </p>
-        <div className="flex items-center gap-3 text-[11px]">
-          <a href="tel:0719767590" className="flex items-center gap-1 text-background/80 hover:text-background font-medium">
-            <Phone className="h-3 w-3" />
-            0719767590
-          </a>
-          <a href="mailto:ltdvintech@gmail.com" className="flex items-center gap-1 text-background/80 hover:text-background font-medium">
-            <Mail className="h-3 w-3" />
-            Email Us
-          </a>
-        </div>
-      </div>
+      )}
     </>
   );
 };
