@@ -88,8 +88,8 @@ const ContactSection = () => {
             className="rounded-xl overflow-hidden border border-border card-shadow min-h-[320px]"
           >
             <iframe
-              title="Ngara Health Centre Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8!2d36.83134!3d-1.27346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTYnMjQuNSJTIDM2wrA0OSc1Mi44IkU!5e0!3m2!1sen!2ske!4v1700000000000"
+              title="Kabete Gardens Hospital Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8!2d36.72!3d-1.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTUnMDAuMCJTIDM2wrA0MycxMi4wIkU!5e0!3m2!1sen!2ske!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: 320 }}

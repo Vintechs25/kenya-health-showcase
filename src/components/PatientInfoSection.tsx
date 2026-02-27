@@ -90,7 +90,7 @@ const PatientInfoSection = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Community Unit</span>
-                <span className="font-medium text-foreground">Ngara CHU</span>
+                <span className="font-medium text-foreground">Kabete CHU</span>
               </div>
             </div>
           </motion.div>

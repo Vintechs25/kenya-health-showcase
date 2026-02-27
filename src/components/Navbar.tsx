@@ -46,11 +46,11 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="tel:+254202717077"
+            href="tel:0202300831"
             className="flex items-center gap-1.5 text-sm font-medium text-primary"
           >
             <Phone className="h-4 w-4" />
-            +254 20 2717077
+            020 2300831
           </a>
           <Button
             size="sm"

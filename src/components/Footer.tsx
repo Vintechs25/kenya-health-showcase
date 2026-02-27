@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-background/40">
-          <p>© 2025 Ngara Health Centre. All rights reserved.</p>
+          <p>© 2025 Kabete Gardens Hospital. All rights reserved.</p>
           <div className="flex items-center gap-2">
             <span>Demo Preview – Created by</span>
             <video

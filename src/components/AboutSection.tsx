@@ -50,7 +50,7 @@ const AboutSection = () => {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden relative card-shadow">
               <img
                 src={aboutImg}
-                alt="Medical team at Ngara Health Centre"
+                alt="Medical team at Kabete Gardens Hospital"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
