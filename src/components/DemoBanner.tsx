@@ -43,7 +43,7 @@ const DemoBanner = () => {
 
       {/* Bottom floating badge */}
       {bottomVisible && (
-        <div className="fixed bottom-4 left-4 z-[60] bg-foreground/95 backdrop-blur-md text-background rounded-xl p-4 card-shadow max-w-[280px] border border-background/5">
+        <div className="fixed bottom-4 right-4 z-[60] bg-foreground/95 backdrop-blur-md text-background rounded-xl p-4 card-shadow max-w-[260px] border border-background/5">
           <button
             onClick={() => setBottomVisible(false)}
             className="absolute top-2 right-2 p-1 text-background/30 hover:text-background transition-colors"
