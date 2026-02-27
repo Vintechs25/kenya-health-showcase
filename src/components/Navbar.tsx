@@ -22,18 +22,16 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="container flex items-center justify-between h-16">
-        {/* Logo area */}
         <button onClick={() => scrollTo("#")} className="flex items-center gap-2">
           <div className="h-9 w-9 rounded-lg bg-primary flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-lg">+</span>
           </div>
           <div className="leading-tight">
-            <span className="font-heading font-bold text-foreground text-sm block">Sunrise Community</span>
-            <span className="text-[11px] text-muted-foreground">Hospital</span>
+            <span className="font-heading font-bold text-foreground text-sm block">Ngara Health Centre</span>
+            <span className="text-[11px] text-muted-foreground">City Council of Nairobi</span>
           </div>
         </button>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => (
             <button
@@ -48,11 +46,11 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="tel:+254700000000"
+            href="tel:+254202717077"
             className="flex items-center gap-1.5 text-sm font-medium text-primary"
           >
             <Phone className="h-4 w-4" />
-            +254 700 000 000
+            +254 20 2717077
           </a>
           <Button
             size="sm"
@@ -63,7 +61,6 @@ const Navbar = () => {
           </Button>
         </div>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden p-2 text-foreground"
           onClick={() => setOpen(!open)}
@@ -73,7 +70,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {open && (
         <div className="md:hidden border-t border-border bg-background px-4 pb-4">
           {navLinks.map((link) => (
