@@ -5,8 +5,8 @@ import aboutImg from "@/assets/about-doctor.jpg";
 const highlights = [
   { icon: ShieldCheck, label: "Ministry of Health" },
   { icon: Users, label: "Community Focused" },
-  { icon: Building, label: "KEPH Level 3" },
-  { icon: Heart, label: "Est. 2016" },
+  { icon: Building, label: "KEPH Level 4" },
+  { icon: Heart, label: "Patient Centered" },
 ];
 
 const AboutSection = () => {
@@ -22,13 +22,13 @@ const AboutSection = () => {
           >
             <span className="text-sm font-semibold text-accent uppercase tracking-wider">About Us</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-5">
-              Caring for the Ngara Community
+              Caring for the Kabete Community
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Ngara Health Centre is a government-operated Basic Health Centre under the City Council of Nairobi, regulated by the Ministry of Health. Located along Park Road near Guru Nanak Hospital in Starehe Sub-County, we serve as a vital primary healthcare facility for the Ngara ward and surrounding communities.
+              Kabete Gardens Hospital is a KEPH Level 4 hospital dedicated to providing quality healthcare in a warm and special way. We serve the Kabete community and surrounding areas with compassion, professionalism, and modern medical care.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Established on 17th March 2016 and classified as KEPH Level 3, our facility is committed to delivering accessible, affordable, and quality healthcare services. We operate 24 hours a day, 7 days a week — including weekends — ensuring that essential medical care is always available when you need it.
+              Classified as a Level 4 hospital, our facility offers comprehensive inpatient and outpatient services. We operate 24 hours a day, 7 days a week — including weekends — ensuring that quality medical care is always available when you need it.
             </p>
             <div className="flex flex-wrap gap-3">
               {highlights.map(({ icon: Icon, label }) => (
@@ -50,7 +50,7 @@ const AboutSection = () => {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden relative card-shadow">
               <img
                 src={aboutImg}
-                alt="Medical team at Ngara Health Centre"
+                alt="Medical team at Kabete Gardens Hospital"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

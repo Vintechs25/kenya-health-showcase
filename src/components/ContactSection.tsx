@@ -6,8 +6,8 @@ const contactDetails = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+254 20 2717077",
-    href: "tel:+254202717077",
+    value: "020 2300831",
+    href: "tel:0202300831",
   },
   {
     icon: Mail,
@@ -18,8 +18,8 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Address",
-    value: "Park Road, Near Guru Nanak Hospital, Ngara, Starehe Sub-County, Nairobi, Kenya",
-    href: "https://www.google.com/maps?q=-1.27346,36.83134",
+    value: "Kabete, Kiambu County, Kenya",
+    href: "https://www.google.com/maps?q=-1.2500,36.7200",
   },
 ];
 
@@ -70,7 +70,7 @@ const ContactSection = () => {
               asChild
             >
               <a
-                href="https://wa.me/254202717077?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20services%20at%20Ngara%20Health%20Centre."
+                href="https://wa.me/254202300831?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20services%20at%20Kabete%20Gardens%20Hospital."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -88,8 +88,8 @@ const ContactSection = () => {
             className="rounded-xl overflow-hidden border border-border card-shadow min-h-[320px]"
           >
             <iframe
-              title="Ngara Health Centre Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8!2d36.83134!3d-1.27346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTYnMjQuNSJTIDM2wrA0OSc1Mi44IkU!5e0!3m2!1sen!2ske!4v1700000000000"
+              title="Kabete Gardens Hospital Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8!2d36.72!3d-1.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTUnMDAuMCJTIDM2wrA0MycxMi4wIkU!5e0!3m2!1sen!2ske!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: 320 }}

@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Ngara Health Centre facility"
+          alt="Kabete Gardens Hospital facility"
           className="w-full h-full object-cover"
           loading="eager"
         />
@@ -30,24 +30,24 @@ const HeroSection = () => {
                 Open 24/7 — Weekends Included
               </span>
             </div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary-foreground/10 px-4 py-1.5 border border-primary-foreground/20">
+             <div className="inline-flex items-center gap-2 rounded-full bg-primary-foreground/10 px-4 py-1.5 border border-primary-foreground/20">
               <Building2 className="h-3.5 w-3.5 text-primary-foreground/80" />
               <span className="text-sm font-medium text-primary-foreground/80">
-                KEPH Level 3 · MFL #13122
+                KEPH Level 4 Hospital
               </span>
             </div>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-4">
-            Ngara Health Centre
+            Kabete Gardens Hospital
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/80 font-medium mb-2">
-            City Council of Nairobi — Ministry of Health
+            Your Health Solution
           </p>
 
           <p className="text-base md:text-lg text-primary-foreground/65 mb-8 max-w-lg">
-            A trusted government health facility located along Park Road, Ngara — providing quality, accessible healthcare to the Starehe community and beyond.
+            Quality healthcare delivered in a warm and special way — serving the Kabete community and beyond with compassion and excellence.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">

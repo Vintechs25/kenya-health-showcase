@@ -27,8 +27,8 @@ const Navbar = () => {
             <span className="text-primary-foreground font-bold text-lg">+</span>
           </div>
           <div className="leading-tight">
-            <span className="font-heading font-bold text-foreground text-sm block">Ngara Health Centre</span>
-            <span className="text-[11px] text-muted-foreground">City Council of Nairobi</span>
+            <span className="font-heading font-bold text-foreground text-sm block">Kabete Gardens Hospital</span>
+            <span className="text-[11px] text-muted-foreground">Your Health Solution</span>
           </div>
         </button>
 
@@ -46,11 +46,11 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="tel:+254202717077"
+            href="tel:0202300831"
             className="flex items-center gap-1.5 text-sm font-medium text-primary"
           >
             <Phone className="h-4 w-4" />
-            +254 20 2717077
+            020 2300831
           </a>
           <Button
             size="sm"
