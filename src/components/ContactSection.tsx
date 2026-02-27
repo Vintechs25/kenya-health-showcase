@@ -12,14 +12,14 @@ const contactDetails = [
   {
     icon: Mail,
     label: "Email",
-    value: "kmhfl@health.go.ke",
-    href: "mailto:kmhfl@health.go.ke",
+    value: "info@kabetegardenshospital.co.ke",
+    href: "mailto:info@kabetegardenshospital.co.ke",
   },
   {
     icon: MapPin,
     label: "Address",
-    value: "Kabete, Kiambu County, Kenya",
-    href: "https://www.google.com/maps?q=-1.2500,36.7200",
+    value: "Wangige, Nairobi, Kenya",
+    href: "https://www.google.com/maps?q=Kabete+Gardens+Hospital+Wangige",
   },
 ];
 

@@ -3,10 +3,10 @@ import { Heart, Users, ShieldCheck, Building } from "lucide-react";
 import aboutImg from "@/assets/about-doctor.jpg";
 
 const highlights = [
-  { icon: ShieldCheck, label: "Ministry of Health" },
-  { icon: Users, label: "Community Focused" },
+  { icon: ShieldCheck, label: "NHIF Accredited" },
+  { icon: Users, label: "Private Facility" },
   { icon: Building, label: "KEPH Level 4" },
-  { icon: Heart, label: "Patient Centered" },
+  { icon: Heart, label: "Minor & Major Theatre" },
 ];
 
 const AboutSection = () => {
@@ -25,10 +25,10 @@ const AboutSection = () => {
               Caring for the Kabete Community
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Kabete Gardens Hospital is a KEPH Level 4 hospital dedicated to providing quality healthcare in a warm and special way. We serve the Kabete community and surrounding areas with compassion, professionalism, and modern medical care.
+              Kabete Gardens Hospital is a private health facility which is NHIF accredited and recognized as a Level 4 health facility. Located in Wangige, Nairobi, we offer both outpatient and inpatient services around the clock, 24 hours a day, 7 days a week.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Classified as a Level 4 hospital, our facility offers comprehensive inpatient and outpatient services. We operate 24 hours a day, 7 days a week — including weekends — ensuring that quality medical care is always available when you need it.
+              With our steady growth, we currently offer both minor and major theatre services. Our dedicated team of healthcare professionals is committed to delivering quality care in a warm and special way — ensuring every patient receives the attention and treatment they deserve.
             </p>
             <div className="flex flex-wrap gap-3">
               {highlights.map(({ icon: Icon, label }) => (

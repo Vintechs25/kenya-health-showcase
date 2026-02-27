@@ -43,11 +43,11 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/80 font-medium mb-2">
-            Your Health Solution
+            Your Health Solution — In a Warm &amp; Special Way
           </p>
 
           <p className="text-base md:text-lg text-primary-foreground/65 mb-8 max-w-lg">
-            Quality healthcare delivered in a warm and special way — serving the Kabete community and beyond with compassion and excellence.
+            A private NHIF-accredited Level 4 hospital offering 24/7 outpatient, inpatient, and both minor &amp; major theatre services in Wangige, Nairobi.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">

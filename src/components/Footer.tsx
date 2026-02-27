@@ -16,7 +16,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-background/50 leading-relaxed">
-              A Level 4 hospital providing quality healthcare in a warm and special way to the Kabete community.
+              A private NHIF-accredited Level 4 hospital offering quality healthcare in a warm and special way in Wangige, Nairobi.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-background text-sm mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
-              {["Outpatient", "Maternity", "Laboratory", "Pharmacy", "Emergency", "In-Patient"].map((s) => (
+              {["Outpatient", "Maternity", "Laboratory", "Pharmacy", "Emergency", "In-Patient", "Minor Theatre", "Major Theatre"].map((s) => (
                 <li key={s}>
                   <span className="text-background/50">{s}</span>
                 </li>
@@ -53,11 +53,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-background/50">
                 <Mail className="h-4 w-4 shrink-0" />
-                kmhfl@health.go.ke
+                info@kabetegardenshospital.co.ke
               </li>
               <li className="flex items-start gap-2 text-background/50">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
-                Kabete, Kiambu County
+                Wangige, Nairobi, Kenya
               </li>
             </ul>
           </div>

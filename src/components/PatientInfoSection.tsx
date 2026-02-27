@@ -57,7 +57,7 @@ const PatientInfoSection = () => {
             <div className="space-y-3 text-sm text-muted-foreground">
               <p>Accepted payment methods:</p>
               <ul className="space-y-2">
-                {["NHIF / SHA", "Linda Mama", "Cash Payments", "M-Pesa"].map((item) => (
+               {["NHIF / SHA", "Linda Mama", "Cash Payments", "M-Pesa", "Insurance"].map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-accent" />
                     <span>{item}</span>

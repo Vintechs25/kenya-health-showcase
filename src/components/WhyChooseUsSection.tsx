@@ -11,8 +11,8 @@ const reasons = [
   },
   {
     icon: ShieldCheck,
-    title: "Government Recognized",
-    description: "Fully registered and compliant with Kenya's health regulations and quality standards.",
+    title: "NHIF Accredited",
+    description: "Fully accredited by NHIF, ensuring affordable and accessible healthcare coverage for all patients.",
     stat: "Level 4",
     statLabel: "Hospital",
   },
@@ -26,7 +26,7 @@ const reasons = [
   {
     icon: MapPin,
     title: "Convenient Location",
-    description: "Kabete area — easily accessible and conveniently located to serve the community.",
+    description: "Wangige, Nairobi — conveniently located and easily accessible to serve the community.",
     stat: "24/7",
     statLabel: "Always Open",
   },
@@ -83,7 +83,7 @@ const WhyChooseUsSection = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex flex-wrap justify-center gap-x-8 gap-y-3 mt-12 text-sm text-primary-foreground/50"
         >
-          {["Ministry of Health Regulated", "KHIS Reporting Active", "Kabete Community Health Unit", "Kiambu County"].map((item) => (
+          {["NHIF Accredited", "Minor & Major Theatre", "24/7 Inpatient & Outpatient", "Wangige, Nairobi"].map((item) => (
             <div key={item} className="flex items-center gap-2">
               <CheckCircle2 className="h-4 w-4 text-accent" />
               <span>{item}</span>
