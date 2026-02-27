@@ -5,8 +5,8 @@ import aboutImg from "@/assets/about-doctor.jpg";
 const highlights = [
   { icon: ShieldCheck, label: "Ministry of Health" },
   { icon: Users, label: "Community Focused" },
-  { icon: Building, label: "KEPH Level 3" },
-  { icon: Heart, label: "Est. 2016" },
+  { icon: Building, label: "KEPH Level 4" },
+  { icon: Heart, label: "Patient Centered" },
 ];
 
 const AboutSection = () => {
