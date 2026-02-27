@@ -49,7 +49,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-background/50">
                 <Phone className="h-4 w-4 shrink-0" />
-                +254 20 2717077
+                020 2300831
               </li>
               <li className="flex items-center gap-2 text-background/50">
                 <Mail className="h-4 w-4 shrink-0" />
