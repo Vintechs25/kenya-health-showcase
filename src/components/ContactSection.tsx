@@ -18,8 +18,8 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Address",
-    value: "Park Road, Near Guru Nanak Hospital, Ngara, Starehe Sub-County, Nairobi, Kenya",
-    href: "https://www.google.com/maps?q=-1.27346,36.83134",
+    value: "Kabete, Kiambu County, Kenya",
+    href: "https://www.google.com/maps?q=-1.2500,36.7200",
   },
 ];
 
