@@ -1,4 +1,4 @@
-import { X, Phone, Mail } from "lucide-react";
+import { X, Phone, Mail, Rocket } from "lucide-react";
 import { useState } from "react";
 
 const DemoBanner = () => {
@@ -43,40 +43,59 @@ const DemoBanner = () => {
 
       {/* Bottom floating badge */}
       {bottomVisible && (
-        <div className="fixed bottom-4 right-4 z-[60] bg-foreground/95 backdrop-blur-md text-background rounded-xl px-5 py-4 card-shadow w-[280px] border border-background/5">
+        <div className="fixed bottom-5 right-5 z-[60] bg-foreground/95 backdrop-blur-md text-background rounded-2xl shadow-2xl border border-background/10 overflow-hidden" style={{ width: 300 }}>
           <button
             onClick={() => setBottomVisible(false)}
-            className="absolute top-2.5 right-2.5 p-1 text-background/30 hover:text-background transition-colors"
+            className="absolute top-3 right-3 p-1 text-background/30 hover:text-background transition-colors z-10"
             aria-label="Close"
           >
-            <X className="h-3.5 w-3.5" />
+            <X className="h-4 w-4" />
           </button>
-          <div className="flex items-center gap-2.5 mb-3">
+
+          {/* Video header */}
+          <div className="relative h-16 overflow-hidden bg-primary/30">
             <video
               src="/vintech_logo.mp4"
               autoPlay
               loop
               muted
               playsInline
-              className="h-7 w-auto rounded shrink-0"
+              className="w-full h-full object-cover opacity-40"
             />
-            <div className="min-w-0">
-              <p className="text-sm font-bold text-background leading-tight truncate">Vintech Systems</p>
-              <p className="text-[10px] text-accent font-semibold mt-0.5">DEMO PREVIEW</p>
+            <div className="absolute inset-0 flex items-center px-5">
+              <div className="flex items-center gap-3">
+                <div className="h-9 w-9 rounded-lg bg-accent flex items-center justify-center shrink-0">
+                  <Rocket className="h-5 w-5 text-accent-foreground" />
+                </div>
+                <div>
+                  <p className="text-base font-extrabold text-background leading-none tracking-tight">Vintech Systems</p>
+                  <p className="text-[11px] text-accent font-bold mt-0.5">DEMO PREVIEW</p>
+                </div>
+              </div>
             </div>
           </div>
-          <p className="text-xs text-background/50 leading-relaxed mb-3">
-            Want a website like this for your hospital?
-          </p>
-          <div className="flex items-center gap-4 text-xs">
-            <a href="tel:0719767590" className="flex items-center gap-1.5 text-background/70 hover:text-background font-medium transition-colors">
-              <Phone className="h-3.5 w-3.5 shrink-0" />
-              0719767590
-            </a>
-            <a href="mailto:ltdvintech@gmail.com" className="flex items-center gap-1.5 text-background/70 hover:text-background font-medium transition-colors">
-              <Mail className="h-3.5 w-3.5 shrink-0" />
-              Email
-            </a>
+
+          {/* Content */}
+          <div className="px-5 py-4">
+            <p className="text-[13px] text-background/60 leading-relaxed mb-4">
+              Want a professional website like this for your hospital? Let's talk.
+            </p>
+            <div className="flex items-center gap-3">
+              <a
+                href="tel:0719767590"
+                className="flex-1 flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground text-xs font-semibold py-2.5 rounded-lg transition-colors"
+              >
+                <Phone className="h-3.5 w-3.5" />
+                0719767590
+              </a>
+              <a
+                href="mailto:ltdvintech@gmail.com"
+                className="flex-1 flex items-center justify-center gap-2 bg-background/10 hover:bg-background/15 text-background text-xs font-semibold py-2.5 rounded-lg transition-colors"
+              >
+                <Mail className="h-3.5 w-3.5" />
+                Email Us
+              </a>
+            </div>
           </div>
         </div>
       )}
