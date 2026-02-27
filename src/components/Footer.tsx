@@ -11,8 +11,8 @@ const Footer = () => {
                 <span className="text-primary-foreground font-bold text-sm">+</span>
               </div>
               <div className="leading-tight">
-                <span className="font-heading font-bold text-background text-sm block">Ngara Health Centre</span>
-                <span className="text-[11px] text-background/50">City Council of Nairobi</span>
+                <span className="font-heading font-bold text-background text-sm block">Kabete Gardens Hospital</span>
+                <span className="text-[11px] text-background/50">Your Health Solution</span>
               </div>
             </div>
             <p className="text-sm text-background/50 leading-relaxed">
