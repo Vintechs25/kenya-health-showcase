@@ -13,8 +13,8 @@ const reasons = [
     icon: ShieldCheck,
     title: "Government Recognized",
     description: "Fully registered and compliant with Kenya's health regulations and quality standards.",
-    stat: "MFL",
-    statLabel: "#13122 Verified",
+    stat: "Level 4",
+    statLabel: "Hospital",
   },
   {
     icon: Wallet,
