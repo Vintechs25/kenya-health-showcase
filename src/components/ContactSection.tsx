@@ -6,8 +6,8 @@ const contactDetails = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+254 20 2717077",
-    href: "tel:+254202717077",
+    value: "020 2300831",
+    href: "tel:0202300831",
   },
   {
     icon: Mail,
