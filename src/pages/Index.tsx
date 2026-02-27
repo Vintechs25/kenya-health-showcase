@@ -6,20 +6,25 @@ import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import PatientInfoSection from "@/components/PatientInfoSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import DemoBanner from "@/components/DemoBanner";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <WhyChooseUsSection />
-        <PatientInfoSection />
-        <ContactSection />
-      </main>
-      <Footer />
+      <DemoBanner />
+      {/* Top padding to account for demo banner */}
+      <div className="pt-9">
+        <Navbar />
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <ServicesSection />
+          <WhyChooseUsSection />
+          <PatientInfoSection />
+          <ContactSection />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 };
