@@ -12,8 +12,8 @@ const contactDetails = [
   {
     icon: Mail,
     label: "Email",
-    value: "kmhfl@health.go.ke",
-    href: "mailto:kmhfl@health.go.ke",
+    value: "info@kabetegardenshospital.co.ke",
+    href: "mailto:info@kabetegardenshospital.co.ke",
   },
   {
     icon: MapPin,
